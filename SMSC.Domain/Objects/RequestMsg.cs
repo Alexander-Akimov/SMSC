@@ -1,8 +1,8 @@
 ﻿using System.Xml.Serialization;
 
-namespace SMSC.Server.ServerApi.Models
+namespace SMSC.Domain.Objects
 {
-    public class Message
+    public class RequestMsg
     {
         [XmlAttribute("id")]
         public string Id { get; set; }

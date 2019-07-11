@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SMSC.Client\SMSC.Client.csproj" />
+    <ProjectReference Include="..\SMSC.Domain\SMSC.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

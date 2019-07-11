@@ -1,28 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace SMSC.Server.ServerApi.Models
+namespace SMSC.Domain.Objects
 {
     [Serializable]
     [XmlRoot(ElementName = "package", IsNullable = false)]
-    public class PackageDTO
+    public class PackageRequest
     {
-        //[XmlElement("send")]
         [XmlArray("send")]
         [XmlArrayItem("message", IsNullable = false)]
-        public List<Message> Send { get; set; }
+        public List<RequestMsg> Send { get; set; }
 
         [XmlAttribute("login")]
         public string Login { get; set; }
 
         [XmlAttribute("password")]
         public string Password { get; set; }
-        /*public PackageDTO()
-        {
-            Send = new List<Message>();
-        }*/
     }
 }
