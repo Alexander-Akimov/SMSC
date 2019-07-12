@@ -16,7 +16,7 @@ namespace SMSC.Domain.Objects
         [XmlText]
         public string Value { get; set; }
 
-        [XmlElement("error", IsNullable = true)]
+        [XmlElement("error")]
         public string MsgErrorCode { get; set; }
     }
 }
